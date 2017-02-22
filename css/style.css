@@ -1,3 +1,37 @@
+.col{
+    flex-direction: column;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.test-border{
+    border: solid black 1px;
+}
+
+.site-identifiers{
+    text-align: center;
+    margin: auto auto auto 35%;
+}
+
+.lookup-bar{
+    justify-content: flex-end;
+}
+
+h1{
+    font-size: 2em;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-item{
+    flex: 1;
+}
+
 .logo{
     display: inline-block;
 }
@@ -7,4 +41,7 @@
 }
 .logo > p{
     display: table;
+}
+.hidden{
+    display: none;
 }
