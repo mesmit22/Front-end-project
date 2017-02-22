@@ -1,0 +1,10 @@
+.logo{
+    display: inline-block;
+}
+.logo > img{
+    width: 100px;
+    height: 90px;
+}
+.logo > p{
+    display: table;
+}
