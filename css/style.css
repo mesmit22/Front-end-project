@@ -1,3 +1,10 @@
+:root{
+    --main-bg-color: rgb(0, 0, 0);
+    --main-txt-color: rgb(0, 0, 0);
+    --nav-color: rgb(0, 0, 0);
+    --site-identity-color: rgb(0, 0, 0);
+}
+
 /*GLOBAL*/
 
 .col{
@@ -8,7 +15,7 @@
     border: solid black 1px;
 }
 h1, h3{
-    color: yellow;
+    color: var(--main-bg-color);
 }
 h1{
     font-size: 2em;
@@ -36,6 +43,9 @@ h1{
 }
 section{
     background-color: gray;
+}
+aside{
+    margin-top: 20px;
 }
 
 /*HERO*/
@@ -100,10 +110,15 @@ a{
 .left-sidebar > li{
     display: inline;
 }
+.center > li{
+    margin: 0 auto;
+    padding: 10px;
+}
 
 /*MIDDLE SECTION*/
 .title > h1, h3{
     text-align: center;
+    padding: 10px;
 }
 .middle-width{
     flex: 3;
@@ -120,4 +135,6 @@ a{
 
 .breadcrumb-path{
     display: flex;
+    margin: 10px;
+    padding-top: 20px;
 }
