@@ -22,11 +22,7 @@
     border: solid black 1px;
 }
 h1, h3{
-<<<<<<< HEAD
-    color: orange;
-=======
     color: var(--Ivory-Black);
->>>>>>> caff9ee59f521c67375702bdae556e573cec4c94
 }
 h1{
     font-size: 2em;
@@ -98,14 +94,8 @@ a{
 /*SITE IDENTIFICATION*/
 
 .site-identifier{
-<<<<<<< HEAD
-    background-color: blue;
-    margin: auto;
-    width: 100%;
-=======
     background-color: var(--Fresh-Water);
     width: 99%;
->>>>>>> caff9ee59f521c67375702bdae556e573cec4c94
     height: 70%;
     border-radius: 30px;
 }
@@ -117,11 +107,7 @@ a{
 /*NAV*/
 
 .navbar{
-<<<<<<< HEAD
-    background-color: rebeccapurple; 
-=======
     background-color: var(--Ivory-Black); 
->>>>>>> caff9ee59f521c67375702bdae556e573cec4c94
 }
 .navbar > ul{
     width: 40%;
