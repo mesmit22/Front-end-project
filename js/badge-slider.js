@@ -1,6 +1,6 @@
+var $img = $("<h1>Hello Test</h1>");
+
 $(function(){
     console.log("ready");
-    $("#slider").click(function(){
-        $(this).toggle();
-    });
+    $("#slider").append($img);
 });
