@@ -9,6 +9,10 @@ $(function(){
     console.log("ready");
     do{
         $("#slider").append($img);
+        $("#slider").append($img);
+        $("#slider").append($img);
+        $("#slider").append($img);
+        $("#slider").append($img);
         $("#slider").slideToggle("slow", function(){
             console.log("Slider: " + i + " completed");
         });
