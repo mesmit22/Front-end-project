@@ -1,6 +1,17 @@
-var $img = $("<h1>Hello Test</h1>");
+var $img = $("<img>");
+var i = 0;
+$img.attr({
+    src: "img/badges/badges_JavaScript_AJAXBasics_Stage1.png",
+    alt: "AJAX Basics Stage 1"
+});
 
 $(function(){
     console.log("ready");
-    $("#slider").append($img);
+    do{
+        $("#slider").append($img);
+        $("#slider").slideToggle("slow", function(){
+            console.log("Slider: " + i + " completed");
+        });
+        i++;
+    }while(i < 100);
 });
