@@ -1,21 +1,52 @@
-var $img = $("<img>");
-var i = 0;
-$img.attr({
-    src: "img/badges/badges_JavaScript_AJAXBasics_Stage1.png",
-    alt: "AJAX Basics Stage 1"
-});
+var $slider = $("#slider");
+var counter = 0;
+var startRemove = false;
+window.onload = function start(){
+    debugger;
+    addBadge();
+};
 
-$(function(){
-    console.log("ready");
-    do{
-        $("#slider").append($img);
-        $("#slider").append($img);
-        $("#slider").append($img);
-        $("#slider").append($img);
-        $("#slider").append($img);
-        $("#slider").slideToggle("slow", function(){
-            console.log("Slider: " + i + " completed");
-        });
-        i++;
-    }while(i < 100);
-});
+var badgesURL = [
+    {
+        SRC: "img/badges/badges_JavaScript_AJAXBasics_Stage1.png",
+        ALT: "AJAX Basics Badge"
+    },
+    {
+        SRC: "img/badges/badges_JavaScript_AJAXBasics_Stage2.png",
+        ALT: "AJAX Badge Badge"
+    },
+    {
+        SRC: "img/badges/badges_JavaScript_AJAXBasics_Stage3.png",
+        ALT: "AJAX Basics Badge"
+    },
+    {
+        SRC: "img/badges/badges_JavaScript_AJAXBasics_Stage4.png",
+        ALT: "AJAX Badge Badge"
+    },
+    {
+        SRC: "img/badges/badges_javaScript_oojs_Stage1.png",
+        ALT: "AJAX Basics Badge"
+    },
+    {
+        SRC: "img/badges/badges_javaScript_oojs_Stage2.png",
+        ALT: "AJAX Badge Badge"
+    }
+];
+
+function addBadge(){
+    window.setInterval(function(){
+        var $badgeIMG = $("<img>");
+        $badgeIMG.attr("src", badgesURL[counter].SRC);
+        $badgeIMG.attr("alt", badgesURL[counter].ALT);
+        $slider.prepend($badgeIMG);
+        console.log(badgesURL[counter].ALT + ", " + counter);
+        counter = (counter + 1) % 6;
+
+        if(startRemove){
+            $slider.find("img").last().remove();
+        }
+        if(counter == 5){
+            startRemove = true;
+        }
+    }, 1000)
+}

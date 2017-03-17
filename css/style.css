@@ -162,7 +162,8 @@ a{
 /*SLIDER*/
 
 .slider-test{
-    width: 100%;
+    margin: 0 auto;
+    width: 50%;
     height: 100%;
 }
 .slider-test > img{
