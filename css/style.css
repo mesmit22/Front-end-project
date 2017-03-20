@@ -162,11 +162,18 @@ a{
 /*SLIDER*/
 
 .slider-test{
-    margin: 0 auto;
-    width: 50%;
-    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .slider-test > img{
     width: 100px;
     height: 100px;
+}
+#badge-slider-capsule{
+    background-color: darkcyan;
+    border-radius: 100px;
+    width: 54%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 10px auto;
 }
