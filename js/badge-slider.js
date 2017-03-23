@@ -80,5 +80,5 @@ function addBadge(){
         if(counter == 5){
             startRemove = true;
         }
-    }, 1000)
+    }, 1500)
 }
